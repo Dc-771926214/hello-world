@@ -1,0 +1,79 @@
+/* pages/appraisal/appraisal.wxss */
+
+.add-wrap {
+position:fixed;
+bottom: 100rpx;
+display:flex;
+right: 60rpx;
+width: 100rpx;
+justify-content:center;
+background-color: red
+}
+
+.add-wrap image {
+width:100rpx;
+height:100rpx;
+}
+
+.radarContainer{
+     background: #fff;
+   width:100%;
+   height:400px;
+   display: flex;
+   justify-content:center;
+    align-items: center; 
+   position: relative;
+   margin-top: 15rpx;
+   
+}
+.radarCanvas{
+   width:400px;
+   height:400px;
+   margin: 0 auto;
+   position: absolute;
+}
+.remark{
+  font-size: 30rpx;
+	line-height: 41rpx;
+	letter-spacing: 2rpx;
+	color: rgba(53, 53, 53, 1);
+}
+
+.cond-title{
+  font-size: 34rpx;
+  font-weight: bold;
+	line-height: 31rpx;
+	letter-spacing: 2rpx;
+	color: rgba(53, 53, 53, 1);
+}
+.cond-egl{
+  text-align: center;
+  font-size: 32rpx;
+}
+.cond-img{
+  width: 670rpx;
+	height: 376rpx;
+	background-color: rgba(188, 188, 188, 1);
+	border-radius: 20rpx;
+}
+.cond{
+  margin-top: 50rpx;
+  height: 773rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 28rpx;
+  color: rgba(53, 53, 53, 1);
+}
+.more{
+  float: right;
+  margin-top: 30rpx;
+  margin-bottom: 80rpx;
+  font-size: 26rpx;
+}
+.conta {
+  width: 500rpx;
+  height: 500rpx;
+  margin: 0 auto;
+  color: #37A2DA
+}

@@ -1,0 +1,57 @@
+<!--pages/idiom/idiom.wxml-->
+<view class="cont">
+  <view class="idiom-pic">
+    <image class="idiom-pic" src="{{coureBan}}"></image>
+  </view>
+  <view class="tabb">
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">课程介绍</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">课程目标</view>
+      <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">适用人群</view>
+      <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">课程礼包</view>
+
+    </view>
+    <view class="intro ">
+      <scroll-view>
+        <view class="cond">
+          <view>
+            <image class="cond-img" src="{{courIntro[0]}}"></image>
+          </view>
+          <view>
+            <image class="cond-img" src="{{courIntro[1]}}"></image>
+          </view>
+          <view>
+            <image class="cond-img" src="{{courIntro[2]}}"></image>
+          </view>
+        </view>
+        <view class=" cond1">
+          <view class="cond-title">课程目标</view>
+          <text class="target">1.课程具体内容：23个声母，24个韵母，5个声调(包括轻声)，16个整体认读音节。声韵调的拼合。 
+2.课程优势：①加入了有趣的故事情节，每一个字母都以人物形象活灵活现的出现。易于抓住学生的兴趣点和注意力。②课堂练习形式丰富多样，主要以游戏和关卡的形式让学生在轻松愉快的氛围中学习和掌握所学拼音。</text>
+          <view class="cond-img">
+            <image class="cond-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/course/HSK.jpg"></image>
+          </view>
+        </view>
+        <view class="cond cond2">
+          <view class="cond-title">适用人群</view>
+          <view>对象：没有系统学过的学员</view>
+          <view>年龄段：6-10岁</view>
+          <view>课程级别：Level 1</view>
+          <view>课节：30节</view>
+          <view>课时：30分/节</view>
+        </view>
+        <view class="cond cond3">
+          <view class="cond-title">课程礼包</view>
+          <view class="gift-item">
+            <view class="list-item" wx:for="{{giftList}}">
+              <view class="gift-img">
+                <image class="gift-img" src="{{item.img}}"></image>
+              </view>
+              <view class="gift-text">{{item.text}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

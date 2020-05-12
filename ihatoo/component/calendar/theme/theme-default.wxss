@@ -1,0 +1,70 @@
+
+/* 日历主要颜色相关样式 */
+
+.default_color,
+.default_handle-color,
+.default_week-color {
+    color: rgba(240, 190, 35, 1);
+}
+
+.default_today {
+    color:rgba(53, 53, 53, 1);
+    background-color: rgba(255, 228, 145, 1);
+}
+
+.default_choosed {
+    color:rgba(53, 53, 53, 1);
+    background-color:rgba(255, 228, 145, 1);
+}
+
+.default_date-disable {
+    color: #c7c7c7;
+}
+
+.default_prev-month-date,
+.default_next-month-date {
+    color: #e2e2e2;
+}
+
+.default_normal-date,.default_weekend-color, {
+    color: rgba(53, 53, 53, 1);
+}
+
+.default_todo-circle {
+    border-color: #88d2ac;
+}
+
+.default_todo-dot {
+    background-color: #e54d42;
+}
+
+.default_date-desc {
+    color: #c2c2c2;
+}
+
+.default_date-desc-lunar {
+    color: #e54d42;
+}
+
+.default_date-desc-disable {
+    color: rgba(53, 53, 53, 1);
+}
+
+.next{
+  margin-right: 160rpx;
+  width: 20rpx;
+	height: 28rpx;
+  background: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f1-btn-next%402x.png) no-repeat;
+  background-size:contain;
+}
+.prev{
+  margin-left: 160rpx;
+  width: 20rpx;
+	height: 28rpx;
+  background: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f1-btn-next%402x.png) no-repeat;
+  background-size:contain;
+   transform: rotateY(180deg)
+}
+/* .prev-handle{
+  margin-left: 100rpx
+} */

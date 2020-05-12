@@ -1,0 +1,41 @@
+<!--pages/tale/tale.wxml-->
+<view class="con">
+  <view class="banner1">
+    <image class="banner" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f1-img-fm%402x.png"></image>
+  </view>
+  <view class="erji"></view>
+  <view class="music">
+  <progress color="#F0BE23" class="free-MusicProgress" bindtouchmove="setTouchMove" percent="{{abc}}"></progress>
+    
+    <view class="play-time">{{lotime}}</view>
+    <audio  bindtap="audioPlay" id="myAudio" bind:changeId="onGetId" bindtimeupdate='bindtimeupdate'src="{{songUrl[storyId]}}"></audio>
+    <view class="all-time">{{time}}</view>
+    <view class="before"></view>
+    <view class="next"></view>
+    <view class="music-list" bindtap="clickList"></view>
+  </view>
+  <view class="music-pic" style="background-image:url({{fengmian}})">
+  </view>
+  <view wx:for="{{yanse}}">
+    <view class="gushi" style="background-image:url({{item}})" ></view>
+  </view>
+ <view class="mask" wx:if="{{show}}"></view>
+  <view class="list" wx:if="{{show}}">
+
+   
+      <swiper class="songli" vertical="true" circular="true" interval="2000" display-multiple-items='{{songList.length}}'>
+      
+        <view>
+          <block wx:for-index="index" wx:for='{{songList}}'>
+            <swiper-item class="song-list"  id="{{index}}" bindtap="clickPlay">
+              <view>{{index+1}}</view>
+              <view class="songname">{{item}}</view>
+              <view class="bofang" style='{{storyId==index?"background-image:url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/me/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE-gif.gif)":"background-image:url()"}}'></view>
+            </swiper-item>
+          </block>
+        </view>
+      </swiper>
+      <view class="close" bindtap="close">收起 v </view>
+    
+  </view>
+</view>

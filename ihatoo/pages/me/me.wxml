@@ -1,0 +1,44 @@
+<!--pages/me/me.wxml-->
+
+<view class="cont">
+  <view class="head" wx:if="{{look}}">
+    <view>
+      <button  bindtap="chlicLog" class="log-but" type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo" >
+        登录
+      </button>
+     
+      <!-- <button bindtap="chlicLog" class="log-but">登录</button> -->
+    </view>
+  </view>
+  <view wx:if="{{show}}" class="head1">
+    <view class="log">
+    <view class="ava">
+      <image class="ava" src="{{avatarUrl}}"></image>
+      </view>
+       <text class="nick">{{nickName}}</text>
+        <!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">确认</button> -->
+    </view>
+  </view>
+  <view class="track">
+  <view  class="me-img">
+  <image class="me-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/me/f3-icon-xxgj%402x.png"></image>
+  </view>
+  <view class="guanyu">学习轨迹</view>
+  <view  class="next"></view>
+  </view>
+  <view class="past">
+  <view  class="me-img">
+  <image class="me-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/me/f3-icon-lsjl%402x.png"></image>
+  </view>
+  <view class="guanyu">历史记录</view>
+  <view class="next"></view>
+  </view>
+  
+  <view class="our">
+  <view  class="me-img">
+  <image class="me-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/me/f3-icon-gywm%402x.png"></image>
+  </view>
+  <view class="guanyu">关于我们</view>
+  <view class="next"></view>
+  </view>
+</view>

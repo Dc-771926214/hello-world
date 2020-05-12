@@ -1,0 +1,19 @@
+/* pages/voercor/overcor.wxss */
+.cor-img{
+  width: 670rpx;
+  height: 894rpx;
+	/* background-color: rgba(240, 190, 35, 1); */
+	border-radius: 20rpx;
+  margin: 0 auto;
+}
+.cor-but{
+  width: 400rpx;
+	height: 70rpx;
+	background-color: rgba(240, 190, 35, 1);
+	border-radius: 20rpx;
+  margin-top: 49rpx;
+  font-size: 30rpx;
+	line-height: 36rpx;
+	letter-spacing: 1rpx;
+	color: rgba(255, 255, 255, 1);
+}

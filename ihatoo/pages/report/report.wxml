@@ -1,0 +1,130 @@
+<view class="cont">
+
+
+
+  <!-- 学员信息 -->
+  <view class="report-text">
+    <view class="report-title">{{name}}的中文学习方案</view>
+    <view class="name">姓名：{{name}}</view>
+    <view class="age">年龄：{{age}}</view>
+    <view class="intro">学生简介：{{intro}}</view>
+  </view>
+
+  <!-- 图表信息 -->
+  <view class="zhu">
+    <view class="left">
+      <view class="left-item">
+        <view>Writinng</view>
+        <view>书写</view>
+      </view>
+      <view class="left-item">
+        <view>Recognitioning</view>
+        <view>识别</view>
+      </view>
+      <view class="left-item">
+        <view>Listening</view>
+        <view>听力</view>
+      </view>
+      <view class="left-item">
+        <view>Speaking</view>
+        <view>口语</view>
+      </view>
+    </view>
+    <view class="right" wx:for="{{width}}">
+      <view class="right-item">
+        <view class="heng" style="width:{{item.write}}rpx"></view>
+        <view class="number" wx:for="{{number}}">{{item.writing}}</view>
+
+      </view>
+      <view class="right-item">
+        <view class="heng" style="width:{{item.recognition}}rpx"></view>
+        <view class="number" wx:for="{{number}}">{{item.recognitioning}}</view>
+      </view>
+      <view class="right-item">
+        <view class="heng" style="width:{{item.listen}}rpx"></view>
+        <view class="number" wx:for="{{number}}">{{item.listening}}</view>
+      </view>
+      <view class="right-item">
+        <view class="heng" style="width:{{item.speak}}rpx"></view>
+        <view class="number" wx:for="{{number}}">{{item.speaking}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- tab切换 -->
+  <view class="tabb">
+    <view class="tabb-title">精品课程</view>
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">推荐课程</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab1">课程占比</view>
+      <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab2">学习规划</view>
+
+    </view>
+    <view class="intro ">
+      <view class="cond">
+        <view class="cond-egl">Zero To One(Kids)</view>
+        <view class="cond-img">
+          <image class="cond-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/course/%E8%B6%A3%E5%91%B3%E6%B1%89%E5%AD%97.jpg"></image>
+        </view>
+        <view>适合对象：4-7岁完全零基础的少儿</view>
+        <view>课程特点：提高口语水平、只涉及少量的汉字教学</view>
+        <view>课程优势：版面生动有趣、每课都有一个重点句型，在短期内提高孩子的词汇量、让孩子爱学敢说。</view>
+      </view>
+      <view class=" cond1">
+        <view class="cond-title">课程占比</view>
+        <!-- <canvas canvas-id="Canvas" style="width:100%;height:371rpx;"></canvas> -->
+        <view class="canvas1">
+          <canvas canvas-id="ringCanvas" class="canvas"></canvas>
+        </view>
+        <view class="ting"></view>
+        <view class="shuo"></view>
+        <view class="du"></view>
+        <view class="xie"></view>
+        <view class="col">
+          <view class="color">
+            <view class="dian"></view>
+            <text>听</text>
+          </view>
+          <view class="color">
+            <view class="dian2"></view>
+            <text>说</text>
+          </view>
+          <view class="color">
+            <view class="dian3"></view>
+            <text>读</text>
+          </view>
+          <view class="color">
+            <view class="dian4"></view>
+            <text>写</text>
+          </view>
+        </view>
+
+      </view>
+      <view class="cond cond3">
+        <view class="cond-title">学习规划</view>
+        <view class="cond-egl">ABC的哈兔学习计划</view>
+        <view class="six">六个月的学习进阶计划</view>
+        <view class="cond-img1">
+          <image class="cond-img2" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/course/f9-img%402x.png"></image>
+        </view>
+        <view class="xuone"></view>
+        <view class="xutwo"></view>
+        <view class="xuthree"></view>
+        <view class="step">
+          <view class="one">
+            <view class="step-text">通过学习中文口语，充分提升ABC说中文的积极性通过学习中文口语，充分提升ABC说中文的积极性</view>
+          </view>
+          <view class="two">
+            <view class="step-text">通过学习中文口语，充分提升ABC说中文的积极性通过学习中文口语，充分提升ABC说中文的积极性</view>
+          </view>
+          <view class="three">
+            <view class="step-text">通过学习中文口语，充分提升ABC说中文的积极性通过学习中文口语，充分提升ABC说中文的积极性</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="intere">中文学习，可以很
+    <text>有趣!</text> </view>
+  <view class="our">我们一直在保持课件的及时更新，使中文学习更有趣，也更有效。我们的老师也 非常乐意与学生、家长互动沟通，如果有任何意见或者建议，非常乐意听到您的声音，请随时与我联络！</view>
+</view>

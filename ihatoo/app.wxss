@@ -1,0 +1,8 @@
+/**app.wxss**/
+
+.cont {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 22rpx;
+  font-family: PingFang-SC-Bold;
+}

@@ -1,0 +1,17 @@
+<!--pages/talk/talk.wxml-->
+
+<view class="talk-img1">
+  <image class="talk-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f3-img%402x.png"></image>
+</view>
+<view class="intro">
+  <view class="intro-title">目录</view>
+  <view class="he">已经更新至{{songList.length}}期</view>
+  <view class="songli">
+    <view class="song-list" wx:for="{{songList}}" wx:for-index="index" bindtap="clickPlay" id="{{index+1}}" data-stroyId="">
+      <view>{{index+1}}</view>
+      <view class="songname">{{item}}</view>
+
+    </view>
+  </view>
+
+</view>

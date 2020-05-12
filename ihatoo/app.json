@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/home",
+    "pages/tale/tale",
+   "pages/ts/ts",
+    "pages/talk/talk",
+   
+    "pages/video/video" ,
+    "pages/report/report",
+    "pages/appraisal/appraisal",
+    "pages/paper/paper",
+    "pages/overcor/overcor",
+    "pages/life/life",
+    "pages/idiom/idiom",
+    "pages/correct/correct",
+    "pages/calendar/calendar",
+    "pages/binding/binding",
+    "pages/me/me",
+    "pages/test/test",
+    "pages/reports/reports",
+    "pages/condition/condition",
+    "pages/login/login"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "哈兔中文网络学院",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#74777e",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home",
+        "text": "首页",
+        "selectedIconPath":"./image/tab-btn-sy-pre@2x.png",
+        "iconPath": "./image/tab-btn-sy-n@2x.png"
+      },
+      {
+        "pagePath": "pages/condition/condition",
+        "text": "学情",
+        "selectedIconPath": "./image/tab-btn-xq-pre@2x.png",
+        "iconPath": "./image/tab-btn-xq-n@2x.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "selectedIconPath": "./image/tab-btn-wd-pre@2x.png",
+        "iconPath": "./image/tab-btn-wd-n@2x.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

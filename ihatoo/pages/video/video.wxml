@@ -1,0 +1,71 @@
+<!--pages/video/video.wxml-->
+
+<view class="cont">
+  <view class="tabb">
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="testTab">防疫大课堂</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="testTab">文化大讲堂</view>
+    </view>
+    <view class="intro {{currentTab == 0 ? 'show':'hidden'}}">
+
+      <video class="video-img" src="{{}}"></video>
+
+      <view class="video-title">哈兔中文网络学院·免费公开课</view>
+      <view class="check">
+        <view class="xuan">选集</view>
+        <view>已更新至{{videoList.length+videoList.length}}期</view>
+      </view>
+      <view class="playList">
+        <view wx:for="{{videoList}}" wx:for-index="index"  id="{{index}}" bindtap="changColor">
+          <view class="num" style='{{key==index?"color:rgba(240, 190, 35, 1);":""}}'   >{{index+1}}
+          <image class="gif"
+                    style='{{key==index?"display:block":"display:none"}}'
+src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/me/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE-gif.gif"></image></view>
+        </view>
+      </view>
+      <view class="playList1" hidden="{{hiddenName}}" >
+        <view wx:for="{{videoList}}" wx:for-index="index" id="{{index+11}}" >
+          <view class="num" >{{index+11}}</view>
+        </view>
+      </view>
+      <view class="more" bindtap="show">点击查看更多>></view>
+
+    </view>
+
+    <!-- 教师介绍 -->
+    <view class="teacher">
+      <view class="teacher-intro">教师介绍</view>
+      <view class="teacher-title">哈兔明星教师</view>
+      <view class="jian">
+        <view class="teacher-pic">
+        <image class="teacher-pic" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f4-img%402x.png"></image>
+        </view>
+        <view class="name">
+          <view>余珊</view>
+          <view>性格：活泼开朗</view>
+          <view>教学风格：幽默与理论并存，亲切与灵活同在</view>
+        </view>
+      </view>
+      <view class="long">
+        <view class="hab">擅长课程：基础课、汉字课、HSK</view>
+        <view>最爱的话：教育的技术不在传授，而在鼓舞和唤醒，而在鼓舞和唤醒</view>
+      </view>
+    </view>
+    <view class="study">
+      <view class="teacher-intro">课程介绍</view>
+      <view class="long">受近期新型冠状病毒的影响，海外诸多中文学校都发布了停课信息、 延迟了开学时间。 为了让广大海外中文学习者的中文学习不间断，隔离病毒、不隔离学习!哈兔中文于2月5日起推出在线直播中文课程，每天一节课,全部免费！! ！直到2月底各国华校恢复开学哈兔精选了《成语故事》+《中华传统文化》两个文化类系列课程，其中《成语故事》课程共选用36个耳熟能详的成语故事，如《盲人摸象》、《拔苗助长》、《掩耳盗铃》《画蛇添足》等。语言简洁易懂，配有生动形象的图片,帮助孩子理解成语内涵，轻松学成语。</view>
+    </view>
+
+<view class="jigou">
+      <view class="teacher-intro">机构介绍</view>
+      <view class="long">哈兔中文网络学院已成立7年，专注为海外华人华侨子女和有中文学习需求的外国人提供线上中文教育和中华文化学习。成立七年来,哈兔中文网络学院在线学习体验的注册学生已超过30000人，遍布全球70多个国家和地区。2018年12月CCTV-4 (央视中文国际频道)专题纪录片《以侨为桥》对哈兔中文进行了专项报道; 2019年与联合国总部中文组正式签约，成为联合国总部的中文教育服务供应商之一。</view>
+    </view>
+
+
+
+
+    <view class=" intro {{currentTab == 1 ? ' show ':'hidden '}}">
+
+    </view>
+  </view>
+</view>

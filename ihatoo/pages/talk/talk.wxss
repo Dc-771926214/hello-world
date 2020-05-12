@@ -1,0 +1,57 @@
+/* pages/talk/talk.wxss */
+
+.talk-img1{
+  width: 670rpx;
+	height: 377rpx;
+	
+	border-radius: 20rpx;
+  margin: 40rpx auto;
+}
+.talk-img{
+  width: 670rpx;
+	height: 377rpx;
+	
+	border-radius: 20rpx;
+
+}
+.song-list{
+  width: 670rpx;
+  margin: 46rpx auto;
+  display: flex;
+  justify-content: space-between;
+  
+  height: 29rpx
+}
+.play-but{
+  width: 34rpx;
+	height: 34rpx;
+  background: yellow
+}
+.intro{
+  width: 749rpx;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 1rpx -4rpx 35rpx 3rpx 
+		rgba(42, 42, 42, 0.2);
+	border-radius: 40rpx;
+  padding-bottom: 5rpx;
+}
+.intro-title{
+  margin-top: 20rpx;
+	font-size: 34rpx;
+	font-weight: bold;
+
+	letter-spacing: 2rpx;
+	color: rgba(53, 53, 53, 1);
+}
+.intro-title,.he{
+  width: 670rpx;
+  margin: 20rpx auto;
+}
+.he{
+  font-size: 24rpx;
+	letter-spacing: 1rpx;
+	color: rgba(53, 53, 53, 1);
+}
+.songname{
+  margin: 0 auto
+}

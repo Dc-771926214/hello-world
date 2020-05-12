@@ -1,0 +1,58 @@
+/* pages/me/me.wxss */
+
+.head{
+  height: 300rpx;
+  /* background-color: red; */
+  text-align: center;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column
+}
+.head1{
+  height: 479rpx;
+  /* background-color: red; */
+  text-align: center;
+  
+  
+}
+.ava{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* align-items: top; */
+  margin: 30rpx auto
+  
+}
+.nick{
+  margin: 30rpx auto;
+}
+.log{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.track,.past,.our{
+  width: 670rpx;
+  height: 100rpx;
+  margin: 10rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.me-img{
+  width: 50rpx;
+  height: 50rpx;
+  
+}
+.next{
+  width: 13rpx;
+	height: 25rpx;
+	
+}
+.guanyu{
+  margin-right: 350rpx;
+}
+.track,.past{
+  border-bottom:1rpx solid #ccc;
+}

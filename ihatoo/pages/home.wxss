@@ -1,0 +1,152 @@
+
+.carousel {
+  height: 345rpx;
+  border-radius: 20rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 345rpx;
+}
+
+.banner {
+  height: 163rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: rgba(53, 53, 53, 1);
+  text-align: center;
+  margin-top: 60rpx;
+}
+
+.item {
+  width: 118rpx;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.item-img {
+  width: 118rpx;
+  height: 118rpx;
+ 
+}
+
+.tabb {
+  margin-top: 59rpx;
+}
+
+.tabb-title {
+  font-size: 36rpx;
+}
+
+.about_page{
+  margin: 0 10px;
+}
+.swiper-tab{
+    width: 100%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 16px;
+}
+.swiper-tab-item{
+   font-size: 30rpx;
+    color: rgba(136, 136, 136, 1);
+}
+.active{
+   color: rgba(53, 53, 53, 1);
+    border-bottom: 4rpx solid rgba(240, 190, 35, 1);
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.intro{
+  margin-top: 29rpx;
+}
+.intro-title{
+  font-weight: bold;
+  font-size: 30rpx;
+	line-height: 43rpx;
+	letter-spacing: 2rpx;
+	color: rgba(53, 53, 53, 1);
+}
+.intro-text{
+  margin-top: 26rpx;
+  color: rgba(53, 53, 53, 1);
+  font-size: 26rpx;
+  line-height: 48rpx;
+}
+.intro-img{
+  margin-top: 31rpx;
+  height: 388rpx;
+  width: 100%;
+  
+}
+/* 测试卷 */
+.modalDlg{
+  position: relative;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 3;
+  opacity: 0.5;
+}
+.close_mask {
+  width: 50rpx;
+  height: 50rpx;
+  color:rgba(136, 136, 136, 1);
+  position: absolute;
+  left:650rpx;
+  top:-290rpx;
+  font-size: 32rpx;
+  z-index: 5;
+}
+
+
+.test{
+  position: absolute;
+  left:10rpx;
+  top:-300rpx;
+  z-index: 4;
+  width: 670rpx;
+	height: 570rpx;
+	background-color:#fff;
+  color: rgba(136, 136, 136, 1);
+	border-radius: 20rpx;
+  /* display: none; */
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.test-img{
+  width: 274rpx;
+	height: 274rpx;
+	background-color: rgba(238, 123, 76, 1);
+  margin: 0 auto
+}
+.test .but{
+  width: 220rpx;
+	height: 70rpx;
+	background-color: rgba(240, 190, 35, 1);
+	border-radius: 20rpx;
+  font-size: 30rpx;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 1rpx;
+}

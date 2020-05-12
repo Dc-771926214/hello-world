@@ -1,0 +1,9 @@
+<!--pages/life/life.wxml-->
+<view class="cont">
+  <view class="life-item" wx:for="{{lifeList}}">
+    <view class="item-title">{{item.title}}</view>
+    
+      <image class="item-img" src="{{item.img}}"></image>
+    
+  </view>
+</view>

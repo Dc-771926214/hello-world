@@ -1,0 +1,19 @@
+<!--pages/appraisal/appraisal.wxml-->
+
+<view class="cont">
+  <view class="cond-title">测评报告</view>
+<view class='radarContainer'>
+<canvas class='radarCanvas' canvas-id='radarCanvas'></canvas>
+</view>
+  <text class="remark">{{remark}}</text>
+
+  <view class="cond">
+    <view class="cond-title">推荐课程</view>
+    <view class="cond-img"></view>
+    <view>适合对象：8岁以上完全零基础的青少年</view>
+    <view>课程特点：听说读写（侧重听说）、定量汉字教学。</view>
+    <view>课程优势：学完该系列课程，孩子能够用中文与他人交流，能够用中文流利的表达自己的想法。同时能够积累一定量的汉字，了解中国的文化。</view>
+    
+  </view>
+  <view class="more">查看详情>> </view>
+</view>

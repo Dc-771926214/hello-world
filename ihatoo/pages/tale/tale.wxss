@@ -1,0 +1,188 @@
+/* pages/tale/tale.wxss */
+page{
+    background-color: #fdf2d4;
+}
+.con{
+  padding-top: 50rpx;
+ z-index: 0;
+}
+.banner1{
+  width: 380rpx;
+  height: 380rpx;
+ border-radius: 50%;
+ margin: 0rpx auto;
+ background-image: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f1-icon-yl%402x.png);
+ background-size: cover;
+ position: relative;
+}
+.banner{
+ width: 252rpx;
+	height: 252rpx;
+ border-radius: 50%;
+ position: absolute;
+ top: 65rpx;
+left: 65rpx;
+
+
+}
+.erji{
+  position: absolute;
+  top: 55rpx;
+right: 95rpx;
+  width: 152rpx;
+	height: 250rpx;
+  background-image: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/me/f1-icon-bf%402x.png);
+  background-size: cover;
+}
+.music{
+  margin: 50rpx auto;
+  width: 670rpx;
+	height: 210rpx;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0rpx 4rpx 35rpx 3rpx 
+		#e5d29c;
+	border-radius: 20rpx;
+    position: relative;
+}
+.free-MusicProgress{
+  position: absolute;
+  width: 476rpx;
+	height: 4rpx;
+ left: 95rpx;
+  top:52rpx;
+  background:#C3C3C3;
+  margin: 0 auto
+}
+.free-MusicProgress>view{
+  background:rgba(240, 190, 35, 1);
+  height:2px;
+}
+audio{
+  position: absolute;
+  top: 99rpx;
+  left: 310rpx;
+  width: 70rpx;
+  height: 70rpx;
+  background-image: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f2-btn-bf%402x.png) ;
+  background-size: cover;
+}
+.play-time{
+  font-size: 20rpx;
+  width: 57rpx;
+	height: 16rpx;
+  color: #C3C3C3;
+  position: absolute;
+  top:43rpx;
+  left: 20rpx
+}
+.all-time{
+  font-size: 20rpx;
+  width: 57rpx;
+	height: 16rpx;
+  color: #C3C3C3;
+  position: absolute;
+  top:43rpx;
+  right: 20rpx
+}
+.before{
+  width: 44rpx;
+	height: 40rpx;
+background-image: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f2-btn-next%402x.png) ;
+  background-size: cover;
+  position: absolute;
+  top: 115rpx;
+  left: 173rpx
+}
+.next{
+  width: 44rpx;
+	height: 40rpx;
+	background-image: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f2-btn-left%402x.png) ;
+  background-size: cover;
+	position: absolute;
+  top: 115rpx;
+  right: 173rpx
+}
+.music-list{
+  width: 41rpx;
+	height: 39rpx;
+		background-image: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f2-btn-lb%402x.png) ;
+  background-size: cover;
+  position: absolute;
+  top: 115rpx;
+  right: 20rpx
+}
+.music-pic{
+  margin: 70rpx auto;
+  width: 670rpx;
+	height: 377rpx;
+		/* background-image: url(http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/talk/f3-img%402x.png) ; */
+  background-size: cover;
+	border-radius: 20rpx;
+}
+.list{
+  position: fixed;
+  bottom:0;
+  left: 43rpx;
+  width: 670rpx;
+	height: 960rpx;
+	background: white;
+	border-radius: 20rpx;
+  color: rgba(53, 53, 53, 1);
+  font-size: 35rpx;
+z-index: 4
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 0;
+  opacity: 0.5;
+}
+.songli{
+  height: 800rpx;
+}
+
+.song-list{
+    /* background: white; */
+  width: 650rpx;
+  margin: 46rpx auto;
+  display: flex;
+  justify-content: space-around;
+  height: 50rpx;
+  line-height: 50rpx;
+  z-index: 4
+}
+.close{
+  /* background: white; */
+  position: absolute;
+  bottom: 0;
+  width: 670rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  font-size: 30rpx;
+	text-align: center;
+	letter-spacing: 2rpx;
+	color: rgba(240, 190, 35, 1);
+  border-top: 1rpx solid rgba(218, 218, 218, 1);
+  
+}
+.content-item {
+  height: 100rpx;
+  width: 95%;
+}
+.bofang{
+  width: 34rpx;
+	height: 34rpx;
+  background-size: cover;
+}
+.gushi{
+  width: 670rpx;
+  height: 1100rpx;
+  background: red;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-bottom: 50rpx;
+}

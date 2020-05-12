@@ -1,0 +1,73 @@
+<!--pages/binding/binding.wxml-->
+<view class="cont1">
+<view class="cont">
+<view class="user">
+    <view class="left">
+      <view class="pic">
+        <image class="pic" src="{{a}}"></image>
+      </view>
+      <text>{{nickName}}\n
+            已经学习天
+     </text>
+      <text class="cut">\n\n切换用户>></text>
+    </view>
+  </view>
+  <view class="shop-title">已购课程</view>
+</view>
+  
+  <view class="box">
+    <view class="shop">
+
+      <view class="shop-img">
+        <image class="img" src="{{firstClass}}"></image>
+        <view class="intro">
+          <view class="intro-title">上下五千年</view>
+          <view>班级类型：1v1</view>
+          <view>任课教师：吴娟</view>
+          <progress percent="30" color="rgba(240, 190, 35, 1)" show-info />
+        </view>
+      </view>
+    </view>
+    <view class="table">
+      <view class="first" bindtap="kebiao">
+        <view class="first-one">
+          <image class="first-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f2-icon-kb%402x.png"></image>
+        </view>
+        <view>课表</view>
+      </view>
+      <view class="two" bindtap="kebiao">
+        <view class="first-one">
+          <image class="two-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f2-icon-qj%402x.png"></image>
+        </view>
+        <view>请假</view>
+      </view>
+    </view>
+  </view>
+  <view class="box">
+    <view class="shop">
+      <view class="shop-img">
+        <image class="img" src="{{twoClass}}"></image>
+        <view class="intro">
+          <view class="intro-title">看图写话</view>
+          <view>班级类型：1v1</view>
+          <view>任课教师：吴娟</view>
+          <progress percent="33" color="rgba(240, 190, 35, 1)" show-info />
+        </view>
+      </view>
+    </view>
+    <view class="table">
+      <view class="first" bindtap="kebiao">
+        <view class="first-one">
+          <image class="first-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f2-icon-kb%402x.png"></image>
+        </view>
+        <view class="first-text">课表</view>
+      </view>
+      <view class="two" bindtap="kebiao">
+        <view class="first-one">
+          <image class="two-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f2-icon-qj%402x.png"></image>
+        </view>
+        <view class="first-text">请假</view>
+      </view>
+    </view>
+  </view>
+</view>

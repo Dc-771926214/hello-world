@@ -1,0 +1,7 @@
+<!--pages/voercor/overcor.wxml-->
+<view class="cont">
+<view class="cor-img">
+<image class="cor-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f1-img%402x.png"></image>
+</view>
+<button class="cor-but" bindtap="toTest">查看报告</button>
+</view>

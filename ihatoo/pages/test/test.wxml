@@ -1,0 +1,55 @@
+<!--pages/test/test.wxml-->
+
+<view class="cont">
+  <view class="tabb">
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="testTab">测试卷</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="testTab">试读课</view>
+
+    </view>
+    <view class="intro {{currentTab == 0 ? 'show':'hidden'}}">
+      <scroll-view>
+        
+        <image  class="test-paper" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f2%402x.png"></image>
+        
+        <button class="test-start" bindtap="startTest">开始测试</button>
+      </scroll-view>
+    </view>
+    <view class=" intro {{currentTab == 2 ? 'show':'hidden'}}">
+      <scroll-view>
+        <view class="test-text">
+          <text>暂时没有试读课哦~</text>
+          <text>请联系督导教师尽快为您安排试读课程吧！</text>
+        </view>
+        <view class="test-img"></view>
+      </scroll-view>
+    </view>
+    <view class=" intro {{currentTab == 1 ? 'show':'hidden'}}">
+      <scroll-view class="free">
+        <view class="test-study">
+          <view class="study-top">
+            <view class="study-img "></view>
+            <view class="study-right ">
+              <view class="study-title ">{{studyTitle}}</view>
+              <view class="study-teacher">{{studyTeacher}}</view>
+              <view class="study-time">{{studyTime}}</view>
+              <view class="study-min"><image   class="min-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f2-icon-sj%402x.png"></image> : {{studyMin}}</view>
+            </view>
+          </view>
+
+          <button class="test-butt " bindtap="reportClick" style="width: 280rpx;">查看试读报告</button>
+
+        </view>
+
+      </scroll-view>
+      <view class="modalDlg" wx:if="{{showReport}}">
+        <view class="mask"></view>
+        <view class="report">
+          <view class="report-img"></view>
+          <view class="report-text">试读报告会在课后生成哦~</view>
+          <button class="but" bindtap="closeReport">确定</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

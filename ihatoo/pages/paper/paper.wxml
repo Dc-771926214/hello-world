@@ -1,0 +1,110 @@
+<!--pages/paper/paper.wxml-->
+<view class="cont">
+ 
+
+<form class="page__bd" bindsubmit="formSubmit">
+    <view class="section section_gap">
+      <text class="first-title">第一部分：听力</text>
+      <audio class="aud" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls></audio>
+      <view class="section__title">1.听上述对话，选择正确的答案。</view>
+
+      <radio-group name="radio-one">
+
+        <label>
+          <radio value="A" />A.口渴</label>
+
+        <label>
+          <radio value="B" />B.生病了</label>
+        <label>
+          <radio value="C" />C.觉得很冷</label>
+      </radio-group>
+    </view>
+
+    <view class="section section_gap ">
+      <text class="first-title">第二部分：口语</text>
+      <view class="section__title ">2.你未来想做什么，为什么？（限时5分钟）</view>
+      <view class="pics">
+        <view wx:for="{{imgUrls}}">
+          <view>
+            <image class="pic" src="{{item}}"></image>
+          </view>
+
+        </view>
+      </view>
+
+      <radio-group name="radio-two">
+
+        <label>
+          <radio value="A" />A.能准确的说出自己的理想和充分的理由，逻辑清晰，句子完整通顺，能用高级丰富的词汇和复杂的句法，发音标准，几乎没有错误。</label>
+
+        <label>
+          <radio value="B" />B.基本能说出自己的理想和简单的理由，逻辑较清晰，采用简单的词汇和句式。</label>
+        <label>
+          <radio value="C" />C.用词不老练，有些不恰当，语法简单,有些笨拙，词汇量少。</label>
+        <label>
+          <radio value="D" />D.用词单薄且不恰当，语言混乱和模糊，出现许多错误。</label>
+      </radio-group>
+    </view>
+
+
+    <view class="section section_gap ">
+      <text class="first-title">第三部分：阅读</text>
+      <view class="section__title ">3.阅读课文片段，完成练习。</view>
+      <text class="intor">　　秋天的雨，有一盒五彩缤纷的颜料。你看，它把黄色给了银杏树，黄黄的叶子像一把把小扇(shān shàn)子，扇哪扇哪，扇走了夏天的炎热。它把红色给了枫树,红红的枫叶像一枚枚邮票，飘哇飘哇,邮来了秋天的凉爽。金黄色是给田野的，看,田野像金色的海洋。橙红色是给果树的，橘子、柿子你挤我碰，争着 要人们去摘呢!菊花仙子得到的颜色就更多了，紫红的、淡黄的、雪白.....美丽的菊花在秋雨里频频点头。</text>
+      <view class="section__title ">（1）给文中加点字选择正确的读音。</view>
+      <view>黄黄的叶子像一把小扇（shān shàn）子。</view>
+      <radio-group name="radio-three">
+
+        <label>
+          <radio value="A" />A. shān</label>
+
+        <label>
+          <radio value="B" />B. shàn</label>
+
+
+      </radio-group>
+    </view>
+
+
+   <view class="section section_gap ">
+      <text class="first-title">第四部分：写作</text>
+      <view class="section__title ">你的朋友快过生日了，请你给他/她写一张生日卡片。不会的字可以写拼音。</view>
+
+
+      <radio-group name="radio-four">
+
+        <label>
+          <radio value="A" />A.能够准确写出3个及以上的生日祝福句子，语法无误，格式正确，(段落前空格、有称呼和署名以及日期、会用标点)、 汉字书写正确。</label>
+
+        <label>
+          <radio value="B" />B.能够准确写出2- -3个句子，语法稍有错误,格式不太规范，有些汉字不会写或出现错误。</label>
+        <label>
+          <radio value="C" />C.只能写出简单的句子，如:祝你生日快乐。没有其他的创意，不知道书写格式，不会用标点符号，汉字书写有错误。</label>
+        <label>
+          <radio value="D" />D.不能写出完整的句子，只会写词语，如:生日。</label>
+      </radio-group>
+    </view> 
+
+    <view class="btn-area">
+      <button class="paper-but" form-type="submit" bindtap="sub">提交</button>
+      
+    </view>
+  </form>
+
+
+<!-- 蒙版 -->
+
+<view class="modalDlg" wx:if="{{showModal}}">
+    <view class='close_mask' bindtap="close_mask">X</view>
+    <view class="mask"></view>
+    <view class="test">
+     <view class="test-img"> 
+     <image class="test-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/pop-img%402x.png"></image>
+     </view>
+      
+      
+      
+      <button class="but" bindtap="lookcor">查看报告</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/condition/condition.wxml-->
+
+
+<view class="item">
+  <image class="condit-img" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/f1-logo%402x.png"></image>
+</view>
+<view class="jj">绑定学生信息，第一时间接收孩子的学习情况</view>
+<view class="bd" bindtap="bind">绑定</view>
+
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class='close_mask' bindtap="close_mask">X</view>
+  <view class="mask"></view>
+  <view class="test">
+    <view class="intro">
+      <view class="shouji"></view>
+      <view class="suo"></view>
+      <input class="weui-input" maxlength="10" placeholder="   请输入手机号" />
+      <view class="line"></view>
+      <input class="weui-input1" maxlength="10" placeholder="   请输入密码" password="{{password}}" />
+      <view class="line"></view>
+    </view>
+    <view class="liji" bindtap="bindok">立即绑定</view>
+    <view class="xianshi" bindtap="bindEye">
+      <image class="xianshi" src="{{isShow?'http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/testpaper/pop-btn-yjbz%402x.png':'http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/testpaper/pop-btn-yjzk%402x.png'}}"></image>
+    </view>
+
+
+
+  </view>
+  <view class="modalDlg1" wx:if="{{showOK}}">
+
+    <view class="mask"></view>
+    <view class="test1">
+      <image class="test-bdcg" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/pop-img-tzbdcg%402x.png"></image>
+      <image class="test-bd" bindtap="binding" src="http://hatu-cdn.oss-cn-hangzhou.aliyuncs.com/hatu-wxapp/xqym/pop-img-tf%402x.png"></image>
+    </view>
+
+    <view class="bindok"></view>
+    <view class="bind-but"></view>
+
+
+  </view>
+</view>

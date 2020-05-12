@@ -1,0 +1,84 @@
+<calendar calendarConfig="{{calendarConfig}}" bind:onTapDay="onTapDay" bind:afterTapDay="afterTapDay" bind:onSwipe="onSwipe" bind:whenChangeWeek="whenChangeWeek" bind:whenChangeMonth="whenChangeMonth" bind:afterCalendarRender="afterCalendarRender"></calendar>
+<view class="case">
+  <view class="have">
+    <view class="yell"></view>
+    <view>有课</view>
+  </view>
+  <view class="have">
+    <view class="green"></view>
+    <view>正常</view>
+  </view>
+  <view class="have">
+    <view class="red"></view>
+    <view>请假</view>
+  </view>
+</view>
+<view class="ke" style="display:{{abc}}">
+  <view class="first">
+    <view class="top">
+      <view class="ke-top">{{month}}月{{day}}日 (周{{weeks[week]}})</view>
+      <view class="qin" bindtap="qinjia">请假</view>
+    </view>
+
+    <view class="ke-bot">
+      <view class="mofa">
+        <view>{{keName}}</view>
+        <view>第{{keNumber}}节</view>
+      </view>
+      <view class="shu"></view>
+      <view class="ke-time">
+        <view class="beijin">北京时间：{{bTime}}</view>
+        <view class="stud">学员时间：{{sTime}}</view>
+      </view>
+    </view>
+
+  </view>
+  <view class="first">
+    <view class="top">
+      <view class="ke-top">{{month}}月{{day}}日 (周{{weeks[week]}})</view>
+      <view class="qin">请假</view>
+    </view>
+
+    <view class="ke-bot">
+      <view class="mofa">
+        <view>{{keName}}</view>
+        <view>第{{keNumber}}节</view>
+      </view>
+      <view class="shu"></view>
+      <view class="ke-time">
+        <view class="beijin">北京时间：{{bTime}}</view>
+        <view class="stud">学员时间：{{sTime}}</view>
+      </view>
+    </view>
+
+  </view>
+  <view class="qintab" wx:if="{{showModal}}">
+  
+    <view class="title">请假事由</view>
+    <textarea class="areas" placeholder='空空如也，快点评论吧'>
+
+    </textarea>
+
+
+    <view class="riqi">
+
+      <picker-view class="picker-a" indicator-style="height:40px" indicator-class="indicator" value="{{value}}" bindchange="bindChange">
+
+        <picker-view-column class="column">
+          <view wx:for="{{months}}" class="zhong" style="line-height: 40px">{{item}}月</view>
+        </picker-view-column>
+        <picker-view-column class="column">
+          <view wx:for="{{days}}" class="zhong" style="line-height: 40px">{{item}}日</view>
+        </picker-view-column>
+        <picker-view-column class="column">
+          <view wx:for="{{years}}" class="zhong" style="line-height: 40px">{{item}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+    <view class="jin-but" bindtap="clickOk">提交</view>
+
+
+  </view>
+<view class="mask"  wx:if="{{showModal}}"></view>
+
+</view>
